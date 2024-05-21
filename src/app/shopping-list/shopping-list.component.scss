@@ -1,0 +1,28 @@
+#shopping-list{
+  background-image: url(../../assets/images/bg.svg);
+  min-height: calc(100vh - 6.5rem);
+  background-size: cover;
+  .list-group{
+    font-size: 1.05rem;
+    .amount{
+      font-size: 1.1rem;
+      color: var(--text-main-color);
+      font-weight: bold;
+    }
+  }
+  .global-card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  }
+  .list-group-item{
+    padding: .7rem;
+  }
+  .list-group-item:first-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.list-group-item:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+}

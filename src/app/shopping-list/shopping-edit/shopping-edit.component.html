@@ -1,0 +1,32 @@
+<div class="global-card p-4">
+  <form aria-label="add-ingredient">
+    <div>
+      <label for="name" class="fw-bold mb-1">
+        Name
+      </label>
+      <input id="name" type="text" class="form-control" #nameInput placeholder="Enter Name">
+    </div>
+    <div class="mt-3">
+      <label for="amount" class="fw-bold mb-1">
+        Amount
+      </label>
+      <input id="amount" type="number" class="form-control" #amountInput placeholder="Enter Amount">
+    </div>
+    <div class="d-flex justify-content-end gap-3 mt-4">
+      <button class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2" type="button"
+        (click)="add()">
+        <i class="pi pi-plus-circle"></i>
+        Add
+      </button>
+      <button class="btn btn-outline-main d-flex justify-content-center align-items-center gap-2" type="button"
+        (click)="clear()">
+        <i class="pi pi-refresh"></i>
+        Clear
+      </button>
+      <button class="btn btn-outline-danger d-flex justify-content-center align-items-center gap-2" type="button">
+        <i class="pi pi-trash"></i>
+        Delete
+      </button>
+    </div>
+  </form>
+</div>

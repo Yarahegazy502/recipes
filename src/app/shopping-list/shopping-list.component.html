@@ -1,0 +1,23 @@
+<div id="shopping-list">
+  <div class="container">
+    <div class="row pt-4">
+      <div class="col-lg-7 col-md-6">
+        <app-shopping-edit (addIngredientHandler)="addIngredient($event)"></app-shopping-edit>
+      </div>
+      <div class="col-lg-5 col-md-6">
+        <div class="global-card p-4 bg-white">
+          <ul class="list-group">
+            @for (item of ingredients; track $index) {
+            <li class="list-group-item d-flex justify-content-between gap-3 flex-wrap">
+              <span class="text-capitalize">{{item.name}}</span>
+              <span class="amount">
+                {{item.amount}}
+              </span>
+            </li>
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

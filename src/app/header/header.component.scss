@@ -1,0 +1,29 @@
+.navbar{
+  height: 3.8rem;
+    border-radius: 10px;
+    background-color: #12148105;
+  .navbar-brand{
+    font-size: 1.5rem;
+    font-family: fantasy;
+  }
+  .nav-link{
+    font-size: 1.05rem;
+    cursor: pointer;
+    &.active{
+      border-bottom:2px solid var(--text-main-color);
+      color: var(--text-main-color);
+      font-weight: bold;
+    }
+  }
+  .badge{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #e81414;
+    top: -6px;
+    right: -9px;
+  }
+}
+.bg-main-color{
+  background-color: var(--bg-main-color);
+}

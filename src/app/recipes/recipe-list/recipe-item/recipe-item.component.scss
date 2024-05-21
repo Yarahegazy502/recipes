@@ -1,0 +1,57 @@
+.recipe-card{
+  cursor: pointer;
+  .recipe-img{
+    height: 14rem;
+    overflow: hidden;
+    border-radius: 15px;
+    img{
+      transition: all .4s ease-in-out;
+      border-radius: 15px;
+    }
+    &:hover{
+      img{
+      transition: all .4s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+  }
+  .recipe-info{
+    border-radius: 20px;
+    margin-top: -2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+    .description{
+      color: #949494;
+      overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+font-size: .95rem;
+height: 2.4rem;
+    }
+    .ingridiants{
+      color: #949494;
+    }
+    .num{
+      width: 1.3rem;
+      min-width: 1.3rem;
+      height: 1.3rem;
+      background-color: var(--bg-main-color);
+      font-size: .8rem;
+    }
+  }
+}
+.btn{
+  border-radius: 8px;
+border: 1px solid var(--bg-main-color);
+height: 2.3rem;
+}
+.btn-main-color{
+  background-color: var(--bg-main-color);
+  color: #fff;
+}
+.btn-outline-color{
+  background-color: transparent;
+  color:var(--text-main-color);
+}

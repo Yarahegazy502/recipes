@@ -1,0 +1,33 @@
+#recipe-details{
+  .recipe-img{
+    height: 25rem;
+    img{
+      border-radius: 10px;
+    }
+  }
+  .description{
+    color: #949494;
+  }
+  .price{
+    color: var(--text-main-color);
+  }
+  .ingredient{
+    background-color: var(--bg-main-color);
+    border-radius: 5px;
+    padding: 0.1rem 0.5rem;
+    font-size: .9rem;
+  }
+  .btn{
+    border-radius: 8px;
+  border: 1px solid var(--bg-main-color);
+  height: 2.5rem;
+  }
+  .btn-main-color{
+    background-color: var(--bg-main-color);
+    color: #fff;
+  }
+  .btn-outline-color{
+    background-color: transparent;
+    color:var(--text-main-color);
+  }
+}

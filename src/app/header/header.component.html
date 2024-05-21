@@ -1,0 +1,86 @@
+<nav class="p-2 bg-main-color">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center gap-3">
+      <p class="mb-0 text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <ul class="navbar-nav d-flex flex-row align-items-center gap-3 p-0">
+        <li>
+          <a href="#" class="text-white">
+            <i class="pi pi-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-white">
+            <i class="pi pi-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-white">
+            <i class="pi pi-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-white">
+            <i class="pi pi-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      Cooking
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+        <li class="nav-item">
+          <a class="nav-link py-3" href="#">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-3" [class.active]="feature=='recipes'" (click)="onSelectFeature('recipes')"
+            aria-current="page">
+            Recipes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-3" [class.active]="feature=='shopping-list'" (click)="onSelectFeature('shopping-list')">
+            Shopping List
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-3" href="#">
+            Blogs
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-3" href="#">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+      <ul class="ms-auto navbar-nav gap-4">
+        <li>
+          <a class="position-relative text-dark">
+            <div class="position-absolute badge d-flex justify-content-center align-items-center">0</div>
+            <i class="pi pi-heart fs-5"></i>
+          </a>
+        </li>
+        <li>
+          <a class="position-relative text-dark">
+            <div class="position-absolute badge d-flex justify-content-center align-items-center">0</div>
+            <i class="pi pi-cart-minus fs-5"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

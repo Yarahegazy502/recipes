@@ -1,0 +1,31 @@
+.global-card{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+border-radius: 15px;
+.form-control{
+  height: 3.5rem;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+.form-control:focus {
+  border-color: #dee2e6;
+  outline: 0;
+  box-shadow: none;
+}
+}
+.btn{
+  border-radius: 8px;
+border: 1px solid var(--bg-main-color);
+height: 2.6rem;
+}
+.btn-solid-main{
+  background-color: var(--bg-main-color);
+  color: #fff;
+}
+.btn-outline-main{
+  background-color: transparent;
+  color:var(--text-main-color);
+}
+.btn-outline-danger{
+  color: #e81414;
+  border-color: #e81414;
+}

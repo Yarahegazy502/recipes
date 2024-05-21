@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+:root{
+  --text-main-color: #121481;
+  --bg-main-color: #121481;
+}
+
+::-webkit-scrollbar {
+  width: 0.3125rem;
+}
+
+::-moz-scrollbar {
+  width: 0.3125rem;
+}
+
+::-o-scrollbar {
+  width: 0.3125rem;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0.25rem;
+}
+
+::-moz-scrollbar:horizontal {
+  height: 0.25rem;
+}
+
+::-o-scrollbar:horizontal {
+  height: 0.25rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #84548e4d;
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-track {
+  background: #84548e4d;
+  border-radius: 10px;
+}
+
+::-o-scrollbar-track {
+  background: #84548e4d;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-main-color);
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background: var(--bg-main-color);
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+::-o-scrollbar-thumb {
+  background: var(--bg-main-color);
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(bg-main-color);
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: var(bg-main-color);
+}
+
+::-o-scrollbar-thumb:hover {
+  background: var(bg-main-color);
+}
+
+.p-scroller,
+.p-dropdown-items-wrapper {
+  margin: 5px 10px !important;
+  &::-webkit-scrollbar-thumb {
+    background: var(bg-main-color);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    max-height: 80% !important;
+  }
+}
+
+.p-dialog {
+  border-radius: 20px;
+}
+.p-dialog .p-dialog-header-icon {
+  box-shadow: none;
+  border-radius: 50%;
+}
+  .p-dialog .p-dialog-header {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.p-dialog .p-dialog-content:last-of-type {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
